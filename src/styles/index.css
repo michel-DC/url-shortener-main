@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+:root {
+  /* couleurs */
+  --color-grey-light: #9e9aa7;
+  --color-grey-dark: #000000 ;
+  --color-purple-medium: #3b3054;
+  --color-purple-dark: #232127;
+  --color-teal-light: #9ae3e2;
+  --color-teal-dark: #33ccff;
+  --color-white: white;
+  --color-white-dark: #f0f1f6;
+  --color-error-light: #f1c4c8;
+  --color-error-dark: #ff0000;
+  --color-purple-main-light: #650cd2;
+
+  /* taille de texte */
+  --font-size-sm: 0.75rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-hero: 3.5rem;
+
+  /* espacement */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+form {
+  width: 100%;
+}
+
+h1,
+.hero {
+  color: var(--color-grey-dark);
+}
+
+.h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+input {
+  padding: 0.75rem;
+  font-size: var(--font-size-sm);
+  border-radius: var(--space-xxs);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fa-brands,
+.footer-link,
+.btn,
+.nav-link {
+  transition: 200ms ease-in-out;
+}
+
+.btn {
+  text-transform: capitalize;
+  color: var(--color-white);
+  background-color: var(--color-teal-dark);
+  border: none;
+  padding: var(--space-xs) 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: var(--space-xxs);
+  font-size: var(--font-size-sm);
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.btn-round {
+  border-radius: var(--space-sm);
+}
+
+.btn-large {
+  font-size: var(--font-size-md);
+}
+
+.btn-large-round {
+  font-size: var(--font-size-md);
+  border-radius: var(--space-md);
+}
+
+.btn:hover {
+  background-color: var(--color-teal-light);
+  cursor: pointer;
+}
+
+.hero-text {
+  font-size: var(--font-size-hero);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .form-background {
+    margin: 0 var(--space-md);
+    bottom: calc(100% - 4.5rem);
+  }
+}
